@@ -11,6 +11,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    cssMinify: 'esbuild', // lightningcss 대신 안정적인 esbuild 사용
+  },
   resolve: {
     alias: {
       '@': resolve(projectRoot, 'src')
