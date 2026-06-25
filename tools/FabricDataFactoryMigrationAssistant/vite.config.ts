@@ -11,6 +11,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    cssMinify: false, 
+  },
   resolve: {
     alias: {
       '@': resolve(projectRoot, 'src')
